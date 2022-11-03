@@ -17,8 +17,7 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book('Гордость и предубеждение и зомби')
         collector.add_new_book('Гордость и предубеждение и зомби')
-        books_rating = collector.get_books_rating()
-        assert len(books_rating) == 1
+        assert len(collector.get_books_rating()) == 1
 
     def test_set_book_rating(self):
         collector = BooksCollector()
